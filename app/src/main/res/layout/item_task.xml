@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white_transparent" >
+
+    <RelativeLayout
+        android:id="@+id/item_lay1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white_transparent"
+        android:paddingLeft="@dimen/margin_10"
+        android:paddingRight="@dimen/margin_10" >
+
+        <com.redrocks.service.ningxia.view.RoundImageView
+            android:id="@+id/icon2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="@dimen/margin_15"
+            android:layout_marginTop="@dimen/margin_20"
+            android:src="@mipmap/updata" />
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/icon2"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/margin_10"
+            android:text="已到达" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/item_lay2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/item_lay1"
+        android:background="@color/white_transparent"
+        android:paddingLeft="@dimen/margin_10"
+        android:paddingRight="@dimen/margin_10"
+        android:paddingBottom="@dimen/margin_20"
+        android:layout_marginTop="@dimen/margin_20">
+
+        <RelativeLayout
+            android:id="@+id/item_lay21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/item_title"
+                style="@style/my_text_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="机顶盒故障维修" />
+
+            <TextView
+                android:id="@+id/item_code"
+                style="@style/my_text_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_toRightOf="@id/item_title"
+                android:paddingLeft="@dimen/margin_5"
+                android:text="(2193184985857)"
+                android:textColor="@color/gray_text"
+                android:textSize="10dp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/item_lay22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_20"
+            android:layout_below="@id/item_lay21" >
+
+            <TextView
+                android:id="@+id/item_name"
+                style="@style/my_text_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:textSize="13dp" 
+                android:text="张先生" />
+
+            <TextView
+                android:id="@+id/item_phone"
+                style="@style/my_text_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_toRightOf="@id/item_name"
+                android:paddingLeft="@dimen/margin_5"
+                android:text="(15811546789)"
+                android:textSize="13dp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/item_lay23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_20"
+            android:layout_below="@id/item_lay22" >
+
+            <TextView
+                android:id="@+id/item_addr"
+                style="@style/my_text_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:textColor="@color/gray_text"
+                android:textSize="12dp" 
+                android:text="地址：" />
+
+            <TextView
+                android:id="@+id/item_address"
+                style="@style/my_text_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_toRightOf="@id/item_addr"
+                android:paddingLeft="@dimen/margin_5"
+                android:text="北京市三里屯1289号专卖店对面"
+                android:textColor="@color/gray_text"
+                android:textSize="12dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/margin_20"
+        android:src="@mipmap/common_arrow"/>
+
+</RelativeLayout>

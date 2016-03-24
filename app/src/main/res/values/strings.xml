@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">NXApplication</string>
+    <string name="login_user">请输入账号</string>
+    <string name="login_pass">请输入密码</string>
+</resources>
