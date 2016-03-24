@@ -19,7 +19,10 @@ import android.widget.TextView;
 
 import com.redrocks.service.ningxia.dialog.WritePadDialog;
 import com.redrocks.service.ningxia.linstener.DialogListener;
-import com.redrocks.service.ningxia.activity.R;
+
+import butterknife.Bind;
+import butterknife.ButterKnife;
+
 public class HandwritingActivity extends Activity {
     /** Called when the activity is first created. */
 	
@@ -27,15 +30,18 @@ public class HandwritingActivity extends Activity {
 	private String signPath;
 	private ImageView ivSign;
 	private TextView tvSign;
+	@Bind(R.id.title_text)
+	protected TextView title_text;
 	private Button tv_button;
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.layout_main);
-        setTitle("欢迎使用手写签名");
+        setContentView(R.layout.layout_evaluation);
+		ButterKnife.bind(this);
+		title_text.setText("签名与评价");
         ivSign =(ImageView)findViewById(R.id.iv_sign);
         tvSign = (TextView)findViewById(R.id.tv_sign);
-        tv_button = (Button)findViewById(R.id.tv_button);
+        tv_button = (Button)findViewById(R.id.tv_okbutton);
         
         ivSign.setOnClickListener(signListener);
         tvSign.setOnClickListener(signListener);
@@ -70,7 +76,7 @@ public class HandwritingActivity extends Activity {
 			case R.id.tv_sign:
 				writeTabletDialog.show();
 				break;
-			case R.id.tv_button:
+			case R.id.tv_okbutton:
 				Intent intent = new Intent(HandwritingActivity.this,RatingActivity.class);
 				startActivity(intent);
 				break;

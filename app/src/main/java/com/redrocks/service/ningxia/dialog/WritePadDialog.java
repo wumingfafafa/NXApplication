@@ -15,6 +15,7 @@ import android.os.Bundle;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.Window;
+import android.view.WindowManager;
 import android.view.WindowManager.LayoutParams;
 import android.widget.Button;
 import android.widget.FrameLayout;
@@ -47,10 +48,16 @@ public class WritePadDialog extends Dialog {
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
 		requestWindowFeature(Window.FEATURE_PROGRESS);
 		setContentView(R.layout.dialog_write_pad);
-		
-		p = getWindow().getAttributes();  //获取对话框当前的参数值   
-		p.height = 960;//(int) (d.getHeight() * 0.4);   //高度设置为屏幕的0.4 
-		p.width = 1280;//(int) (d.getWidth() * 0.6);    //宽度设置为屏幕的0.6		   
+
+		WindowManager wm = (WindowManager) getContext().getSystemService(Context.WINDOW_SERVICE);
+
+		int width = wm.getDefaultDisplay().getWidth();
+		int height = wm.getDefaultDisplay().getHeight();
+		p = getWindow().getAttributes(); // 获取对话框当前的参数值
+//		p.height = 960;// (int) (d.getHeight() * 0.4); //高度设置为屏幕的0.4
+//		p.width = 1280;// (int) (d.getWidth() * 0.6); //宽度设置为屏幕的0.6
+		p.height =  (int) (height); //高度设置
+		p.width = (int) (width); //宽度设置
 		getWindow().setAttributes(p);     //设置生效
 		
 		
