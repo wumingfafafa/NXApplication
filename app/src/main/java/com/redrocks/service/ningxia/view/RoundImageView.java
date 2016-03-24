@@ -1,6 +1,5 @@
 package com.redrocks.service.ningxia.view;
 
-import com.redrocks.service.ningxia.R;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -19,7 +18,7 @@ import android.util.AttributeSet;
 import android.util.Log;
 import android.util.TypedValue;
 import android.widget.ImageView;
-
+import com.redrocks.service.ningxia.activity.R;
 
 /**
  * 

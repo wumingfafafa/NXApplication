@@ -1,4 +1,4 @@
-package ningxia.service.redrocks.com.activity;
+package com.redrocks.service.ningxia.activity;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -12,8 +12,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
-import com.redrocks.service.ningxia.R;
+import com.redrocks.service.ningxia.activity.R;
 
 import butterknife.ButterKnife;
 

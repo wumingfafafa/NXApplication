@@ -1,15 +1,10 @@
-package ningxia.service.redrocks.com.activity;
+package com.redrocks.service.ningxia.activity;
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
-import com.redrocks.service.ningxia.R;
-import com.redrocks.service.ningxia.R.id;
-import com.redrocks.service.ningxia.R.layout;
-import com.redrocks.service.ningxia.dialog.WritePadDialog;
-import com.redrocks.service.ningxia.linstener.DialogListener;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -22,6 +17,9 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.redrocks.service.ningxia.dialog.WritePadDialog;
+import com.redrocks.service.ningxia.linstener.DialogListener;
+import com.redrocks.service.ningxia.activity.R;
 public class HandwritingActivity extends Activity {
     /** Called when the activity is first created. */
 	
@@ -36,8 +34,8 @@ public class HandwritingActivity extends Activity {
         setContentView(R.layout.layout_main);
         setTitle("欢迎使用手写签名");
         ivSign =(ImageView)findViewById(R.id.iv_sign);
-        tvSign = (TextView)findViewById(R.id.tv_sign);      
-        tv_button = (Button)findViewById(R.id.tv_button);      
+        tvSign = (TextView)findViewById(R.id.tv_sign);
+        tv_button = (Button)findViewById(R.id.tv_button);
         
         ivSign.setOnClickListener(signListener);
         tvSign.setOnClickListener(signListener);

@@ -1,11 +1,9 @@
-package ningxia.service.redrocks.com.activity;
+package com.redrocks.service.ningxia.activity;
 
 import android.os.Bundle;
 import android.widget.RatingBar;
 import android.widget.RatingBar.OnRatingBarChangeListener;
-
-import com.redrocks.service.ningxia.R;
-
+import com.redrocks.service.ningxia.activity.R;
 import android.app.Activity;
 /**
  * RatingBar

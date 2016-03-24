@@ -1,30 +1,22 @@
-package ningxia.service.redrocks.com.activity;
+package com.redrocks.service.ningxia.activity;
 
 import android.app.Activity;
-import android.app.AlertDialog;
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.AdapterView;
 import android.widget.ImageView;
 import android.widget.ListView;
-import android.widget.SimpleAdapter;
-import android.widget.Spinner;
-import android.widget.TextView;
-import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import com.redrocks.service.ningxia.R;
 import com.redrocks.service.ningxia.adapter.MyAdapter;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
-
+import com.redrocks.service.ningxia.activity.R;
 /**
  * @author : Chunfa.Zhang
  * @since : 2016/3/19.

@@ -3,8 +3,6 @@ package com.redrocks.service.ningxia.adapter;
 import java.util.List;
 import java.util.Map;
 
-import com.redrocks.service.ningxia.R;
-import com.redrocks.service.ningxia.view.RoundImageView;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -14,6 +12,9 @@ import android.widget.BaseAdapter;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.redrocks.service.ningxia.activity.R;
+import com.redrocks.service.ningxia.view.RoundImageView;
 
 public class MyAdapter extends BaseAdapter {
 	private LayoutInflater mInflater;

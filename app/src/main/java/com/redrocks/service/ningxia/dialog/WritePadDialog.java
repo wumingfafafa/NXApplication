@@ -1,8 +1,6 @@
 package com.redrocks.service.ningxia.dialog;
 
-import com.redrocks.service.ningxia.R;
-import com.redrocks.service.ningxia.R.id;
-import com.redrocks.service.ningxia.R.layout;
+import com.redrocks.service.ningxia.activity.R;
 import com.redrocks.service.ningxia.linstener.DialogListener;
 
 import android.app.Dialog;
