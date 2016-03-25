@@ -10,7 +10,7 @@
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
         android:paddingLeft="@dimen/margin_15"
-        android:src="@mipmap/common_arrow"
+        android:src="@mipmap/common_right"
          />
 
     <TextView

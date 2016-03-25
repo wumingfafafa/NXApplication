@@ -267,7 +267,7 @@
                         android:layout_alignParentLeft="true"
                         android:layout_centerVertical="true"
                         android:layout_marginRight="@dimen/margin_15"
-                        android:src="@mipmap/updata" />
+                        android:src="@mipmap/level" />
 
                     <TextView
                         android:id="@+id/my_tv_friends"
