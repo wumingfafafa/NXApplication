@@ -11,9 +11,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import com.redrocks.service.ningxia.adapter.MyAdapter;
-
-import com.redrocks.service.ningxia.activity.R;
+import com.redrocks.service.ningxia.adapter.TaskAdapter;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
@@ -39,7 +37,7 @@ public class MainTaskActivity2 extends Activity {
         setContentView(R.layout.layout_maintask);
         ButterKnife.bind(this);
         mData = getData();
-        MyAdapter adapter = new MyAdapter(this,getData());
+        TaskAdapter adapter = new TaskAdapter(this,getData());
         main_listview.setAdapter(adapter);
     }
     private List<Map<String, Object>> getData() {

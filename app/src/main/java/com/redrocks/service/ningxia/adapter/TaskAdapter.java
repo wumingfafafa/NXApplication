@@ -5,6 +5,7 @@ import java.util.Map;
 
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,14 +15,17 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.redrocks.service.ningxia.activity.R;
+import com.redrocks.service.ningxia.activity.TaskDetailActivity;
 import com.redrocks.service.ningxia.view.RoundImageView;
 
-public class MyAdapter extends BaseAdapter {
+public class TaskAdapter extends BaseAdapter {
 	private LayoutInflater mInflater;
 	private List<Map<String, Object>> mData;
-	public MyAdapter(Context context,List<Map<String, Object>> mData) {
+	Context context;
+	public TaskAdapter(Context context,List<Map<String, Object>> mData) {
 		this.mInflater = LayoutInflater.from(context);
 		this.mData = mData;
+		this.context = context;
 	}
 
 	@Override
@@ -82,7 +86,15 @@ public class MyAdapter extends BaseAdapter {
 		holder.item_name.setText((String) mData.get(position).get("item_name"));
 		holder.item_phone.setText((String) mData.get(position).get("item_phone"));
 		holder.item_address.setText((String) mData.get(position).get("item_address"));
+		convertView.setOnClickListener(new View.OnClickListener() {
 
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				Intent intent = new Intent(context,TaskDetailActivity.class);
+				context.startActivity(intent);
+			}
+		});
 		return convertView;
 	}
 
