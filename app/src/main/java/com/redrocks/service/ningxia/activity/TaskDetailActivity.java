@@ -10,6 +10,12 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+
+import com.redrocks.service.ningxia.view.TagCloudView;
+
+import java.util.ArrayList;
+import java.util.List;
+
 import butterknife.Bind;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
@@ -110,6 +116,10 @@ public class TaskDetailActivity extends Activity {
     Button tvOkbutton;
     @Bind(R.id.tv_arrbutton)
     Button tvArrbutton;
+    @Bind(R.id.tag_cloud_view_4)
+    TagCloudView tagCloudView4;
+    @Bind(R.id.tag_cloud_view_5)
+    TagCloudView tagCloudView5;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -118,8 +128,15 @@ public class TaskDetailActivity extends Activity {
         ButterKnife.bind(this);
         initViews();
     }
-    protected void initViews(){
+
+    protected void initViews() {
         titleText.setText("任务详情");
+        List<String> tags = new ArrayList<>();
+        for (int i = 0; i < 20; i++) {
+            tags.add("标签" + i);
+        }
+        tagCloudView4.setTags(tags);
+        tagCloudView5.setTags(tags);
     }
 
     @OnClick({R.id.title_back, R.id.title_text, R.id.title_right, R.id.title_right_img, R.id.detail_id_view, R.id.icon1, R.id.detail_tv_about, R.id.detail_tv_name, R.id.detail_tv_address, R.id.detail_tv_person, R.id.detail_tv_phone, R.id.detail_tv_sbgz, R.id.detail_tv_dy, R.id.detail_tv_dygz, R.id.detail_tv_dy1, R.id.detail_tv_dygz1, R.id.detail_gz1, R.id.detail_tv_xsq, R.id.detail_tv_xsqgz, R.id.detail_gz3, R.id.detail_tv_xsq1, R.id.detail_tv_xsqgz1, R.id.detail_gz4, R.id.my_tv_other, R.id.my_tv_othertext, R.id.my_team_otherlay, R.id.my_tv_note, R.id.my_tv_notetext, R.id.my_invite_notelay, R.id.detail_tv_ti, R.id.detail_tv_text, R.id.tv_rebutton, R.id.tv_okbutton, R.id.tv_arrbutton})

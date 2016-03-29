@@ -11,4 +11,5 @@
     <color name="res_color_black">#000000</color>
     <color name="white_transparent">#FFFFFF</color>
     <color name="yellow">#F4C033</color>
+    <color name="red">#F95252</color>
 </resources>

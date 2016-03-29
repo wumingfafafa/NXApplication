@@ -3,7 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/gray" >
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/gray">
 
     <include
         android:id="@+id/detail_title"
@@ -74,7 +75,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/height_divider_line_lsize"
                     android:layout_marginLeft="@dimen/margin_20"
-                    android:layout_marginRight="@dimen/margin_20"
                     android:background="@color/gray_text" />
 
                 <RelativeLayout
@@ -254,16 +254,19 @@
                 <RelativeLayout
                     android:id="@+id/detail_gz"
                     android:layout_width="match_parent"
-                    android:layout_height="@dimen/margin_30"
+                    android:layout_height="wrap_content"
                     android:background="@color/white_transparent"
                     android:paddingLeft="@dimen/margin_20"
-                    android:paddingRight="@dimen/margin_20" >
+                    android:paddingRight="@dimen/margin_20"
+                    android:paddingBottom="@dimen/margin_5"
+                    android:paddingTop="@dimen/margin_5">
 
                     <TextView
                         android:id="@+id/detail_tv_dy"
                         style="@style/my_text_style"
                         android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_10"
                         android:layout_alignParentLeft="true"
                         android:text="电源故障  " />
 
@@ -276,7 +279,23 @@
                         android:layout_marginLeft="@dimen/margin_30"
                         android:gravity="center_vertical"
                         android:layout_toRightOf="@id/detail_tv_dy"
+                        android:visibility="gone"
                         android:text="设备无法供电" />
+                    <com.redrocks.service.ningxia.view.TagCloudView
+                        android:id="@+id/tag_cloud_view_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_25"
+                        android:layout_toRightOf="@id/detail_tv_dy"
+                        app:tcvItemBorderHorizontal="8dp"
+                        app:tcvItemBorderVertical="6dp"
+                        app:tcvBorder="8dp"
+                        app:tcvTextColor="@color/white"
+                        app:tcvShowEndText="false"
+                        app:tcvShowRightImg="false"
+                        app:tcvSingleLine="true"
+                        app:tcvCanTagClick="false"
+                        />
 
                     <ImageView
                         android:layout_width="wrap_content"
@@ -293,6 +312,7 @@
                     android:layout_height="@dimen/margin_30"
                     android:layout_marginBottom="@dimen/margin_10"
                     android:background="@color/white_transparent"
+                    android:visibility="gone"
                     android:paddingLeft="@dimen/margin_20"
                     android:paddingRight="@dimen/margin_20" >
 
@@ -326,10 +346,14 @@
                 <RelativeLayout
                     android:id="@+id/detail_gz3"
                     android:layout_width="match_parent"
-                    android:layout_height="@dimen/margin_30"
+                    android:layout_height="wrap_content"
                     android:background="@color/white_transparent"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:layout_marginBottom="@dimen/margin_10"
                     android:paddingLeft="@dimen/margin_20"
-                    android:paddingRight="@dimen/margin_20" >
+                    android:paddingRight="@dimen/margin_20"
+                    android:paddingBottom="@dimen/margin_5"
+                    android:paddingTop="@dimen/margin_5">
 
                     <TextView
                         android:id="@+id/detail_tv_xsq"
@@ -337,6 +361,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_alignParentLeft="true"
+                        android:layout_marginTop="@dimen/margin_10"
                         android:text="显示器故障" />
 
                     <TextView
@@ -347,7 +372,23 @@
                         android:layout_marginLeft="@dimen/margin_25"
                         android:gravity="center_vertical"
                         android:layout_toRightOf="@id/detail_tv_xsq"
+                        android:visibility="gone"
                         android:text="显示器损坏" />
+                    <com.redrocks.service.ningxia.view.TagCloudView
+                        android:id="@+id/tag_cloud_view_5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_17"
+                        android:layout_toRightOf="@id/detail_tv_xsq"
+                        app:tcvItemBorderHorizontal="8dp"
+                        app:tcvItemBorderVertical="6dp"
+                        app:tcvBorder="8dp"
+                        app:tcvTextColor="@color/white"
+                        app:tcvShowEndText="false"
+                        app:tcvShowRightImg="false"
+                        app:tcvSingleLine="true"
+                        app:tcvCanTagClick="false"
+                        />
 
                     <ImageView
                         android:layout_width="wrap_content"
@@ -365,6 +406,7 @@
                     android:layout_marginBottom="@dimen/margin_10"
                     android:background="@color/white_transparent"
                     android:paddingLeft="@dimen/margin_20"
+                    android:visibility="gone"
                     android:paddingRight="@dimen/margin_20" >
 
 
