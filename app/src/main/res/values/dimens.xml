@@ -5,6 +5,7 @@
     <dimen name="margin__1">-1dp</dimen>
     <dimen name="height_divider_line_lsize">0.5dp</dimen>
     <dimen name="margin_1">1dp</dimen>
+    <dimen name="margin_2">2dp</dimen>
     <dimen name="margin_3">3dp</dimen>
     <dimen name="margin_5">5dp</dimen>
     <dimen name="margin_10">10dp</dimen>
