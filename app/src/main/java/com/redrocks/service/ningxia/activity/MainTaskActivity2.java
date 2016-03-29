@@ -13,10 +13,12 @@ import java.util.Map;
 
 import com.redrocks.service.ningxia.adapter.MyAdapter;
 
+import com.redrocks.service.ningxia.activity.R;
+
 import butterknife.Bind;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
-import com.redrocks.service.ningxia.activity.R;
+
 /**
  * @author : Chunfa.Zhang
  * @since : 2016/3/19.

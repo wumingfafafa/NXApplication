@@ -36,7 +36,8 @@ public class LoginActivity extends Activity {
 	public void onClick(View view) {
 		switch (view.getId()) {
 		case R.id.icon_user:
-			Intent intent1 = new Intent(this,EvaluationActivity.class);
+			Intent intent1 = new Intent(this,ReportActivity.class);
+//			Intent intent1 = new Intent(this,EvaluationActivity.class);
 			startActivity(intent1);
 			break;
 		case R.id.login_user:
