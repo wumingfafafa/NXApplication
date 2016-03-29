@@ -25,8 +25,7 @@ public class EvaluationActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.layout_report);
-//        setContentView(R.layout.layout_taskdetails);
+        setContentView(R.layout.layout_evaluation);
         ButterKnife.bind(this);
 
     }

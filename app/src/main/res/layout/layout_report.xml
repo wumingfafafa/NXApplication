@@ -141,7 +141,6 @@
                     android:visibility="gone" />
 
                 <RelativeLayout
-                    android:id="@+id/report_laygz"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/margin_50"
                     android:background="@color/white_transparent"
@@ -207,6 +206,7 @@
                     android:background="@color/gray_text" />
 
                 <RelativeLayout
+                    android:id="@+id/report_laymd"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/margin_50"
                     android:background="@color/white_transparent"
@@ -214,7 +214,6 @@
                     android:paddingRight="@dimen/margin_20" >
 
                     <TextView
-                        android:id="@+id/report_md"
                         style="@style/my_text_style"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
@@ -224,7 +223,7 @@
                         android:text="买电" />
 
                     <ImageButton
-                        android:id="@+id/report_mdutton"
+                        android:id="@+id/report_mdbutton"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentRight="true"
@@ -299,7 +298,7 @@
                         android:layout_centerInParent="true"
                         android:layout_toRightOf="@id/icon3"
                         android:gravity="center_vertical"
-                        android:text="换插座" />
+                        android:text="续年费" />
 
                     <ImageButton
                         android:id="@+id/report_xnfbutton"
@@ -361,6 +360,7 @@
                 </RelativeLayout>
 
                 <RelativeLayout
+                    android:id="@+id/report_laykhqz"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/margin_50"
                     android:layout_marginTop="@dimen/margin_20"
@@ -400,7 +400,7 @@
                     android:background="@color/gray_text" />
 
                 <RelativeLayout
-                    android:id="@+id/my_update"
+                    android:id="@+id/report_laybz"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/margin_50"
                     android:layout_marginBottom="@dimen/margin_10"
@@ -426,20 +426,13 @@
                         android:textColor="@color/gray_text" />
                 </RelativeLayout>
 
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/height_divider_line_lsize"
-                    android:layout_marginLeft="@dimen/margin_20"
-                    android:layout_marginRight="@dimen/margin_20"
-                    android:background="@color/gray_text"
-                    android:visibility="gone" />
             </LinearLayout>
         </RelativeLayout>
     </ScrollView>
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="@dimen/margin_40"
+        android:layout_height="@dimen/margin_50"
         android:layout_alignParentBottom="true"
         android:layout_marginTop="@dimen/margin_10" >
 

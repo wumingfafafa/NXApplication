@@ -69,7 +69,7 @@
                         android:orientation="vertical" >
 
                         <TextView
-                            android:id="@+id/my_tv_about11"
+                            android:id="@+id/my_newtasknum"
                             style="@style/my_text_style"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -78,12 +78,11 @@
                             android:text="12" />
 
                         <TextView
-                            android:id="@+id/my_tv_about10"
                             style="@style/my_text_style"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_centerInParent="true"
-                            android:layout_below="@id/my_tv_about11"
+                            android:layout_below="@id/my_newtasknum"
                             android:gravity="center"
                             android:textColor="@color/gray_text"
                             android:textSize="12dp"
@@ -98,7 +97,7 @@
                         android:orientation="vertical" >
 
                         <TextView
-                            android:id="@+id/my_tv_about21"
+                            android:id="@+id/my_nouploadtask"
                             style="@style/my_text_style"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -107,11 +106,10 @@
                             android:text="3" />
 
                         <TextView
-                            android:id="@+id/my_tv_about20"
                             style="@style/my_text_style"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_below="@id/my_tv_about21"
+                            android:layout_below="@id/my_nouploadtask"
                             android:layout_centerInParent="true"
                             android:gravity="center"
                             android:textColor="@color/gray_text"
@@ -128,7 +126,7 @@
                         android:orientation="vertical" >
 
                         <TextView
-                            android:id="@+id/my_tv_about31"
+                            android:id="@+id/my_dotask"
                             style="@style/my_text_style"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -137,11 +135,10 @@
                             android:text="1" />
 
                         <TextView
-                            android:id="@+id/my_tv_about30"
                             style="@style/my_text_style"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_below="@id/my_tv_about31"
+                            android:layout_below="@id/my_dotask"
                             android:layout_centerInParent="true"
                             android:gravity="center"
                             android:textColor="@color/gray_text"
@@ -167,7 +164,7 @@
                 android:orientation="vertical" >
 
                 <RelativeLayout
-                    android:id="@+id/my_about"
+                    android:id="@+id/my_jingdu"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/margin_60"
                     android:layout_marginBottom="@dimen/margin_10"
@@ -186,7 +183,7 @@
                         android:src="@mipmap/jingdu" />
 
                     <TextView
-                        android:id="@+id/my_tv_about"
+                        android:id="@+id/my_jingdutext"
                         style="@style/my_text_style"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
@@ -212,7 +209,7 @@
                     android:visibility="gone" />
 
                 <RelativeLayout
-                    android:id="@+id/my_team_title"
+                    android:id="@+id/my_updateshuju"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/margin_50"
                     android:background="@color/white_transparent"
@@ -229,7 +226,7 @@
                         android:src="@mipmap/updata" />
 
                     <TextView
-                        android:id="@+id/my_tv_team"
+                        android:id="@+id/my_updatetext"
                         style="@style/my_text_style"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
@@ -252,7 +249,7 @@
                     android:background="@color/gray_text" />
 
                 <RelativeLayout
-                    android:id="@+id/my_invite_friends"
+                    android:id="@+id/my_level"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/margin_50"
                     android:layout_marginBottom="@dimen/margin_10"
@@ -270,7 +267,7 @@
                         android:src="@mipmap/level" />
 
                     <TextView
-                        android:id="@+id/my_tv_friends"
+                        android:id="@+id/my_leveltext"
                         style="@style/my_text_style"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
@@ -308,7 +305,7 @@
                     android:visibility="gone" />
 
                 <RelativeLayout
-                    android:id="@+id/my_score"
+                    android:id="@+id/my_pass"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/margin_50"
                     android:background="@color/white_transparent"
@@ -325,7 +322,7 @@
                         android:src="@mipmap/editpass" />
 
                     <TextView
-                        android:id="@+id/my_tv_score"
+                        android:id="@+id/my_passtext"
                         style="@style/my_text_style"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
@@ -348,7 +345,7 @@
                     android:background="@color/gray_text" />
 
                 <RelativeLayout
-                    android:id="@+id/my_update"
+                    android:id="@+id/my_relogin"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/margin_50"
                     android:layout_marginBottom="@dimen/margin_10"
@@ -366,7 +363,7 @@
                         android:src="@mipmap/relogin" />
 
                     <TextView
-                        android:id="@+id/my_tv_update"
+                        android:id="@+id/my_relogintext"
                         style="@style/my_text_style"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
@@ -391,7 +388,7 @@
                     android:visibility="gone" />
 
                 <RelativeLayout
-                    android:id="@+id/my_official_website"
+                    android:id="@+id/my_checkupdate"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/margin_50"
                     android:layout_marginBottom="@dimen/margin_10"
@@ -409,7 +406,7 @@
                         android:src="@mipmap/updateicon" />
 
                     <TextView
-                        android:id="@+id/my_tv_website"
+                        android:id="@+id/my_checkupdatetext"
                         style="@style/my_text_style"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
@@ -441,16 +438,25 @@
             </LinearLayout>
 
             <TextView
-                android:id="@+id/my_login_out"
+                android:id="@+id/my_versiontext"
                 style="@style/my_text_style"
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/margin_50"
+                android:layout_height="wrap_content"
                 android:layout_below="@+id/my_id_ll_info"
-                android:layout_marginTop="@dimen/margin_20"
-                android:background="@color/gray"
+                android:textColor="@color/gray_text"
                 android:gravity="center"
-                android:text="098777"
-                android:visibility="gone" />
+                android:text="当前版本V 1.0" />
+            <TextView
+                android:id="@+id/my_versiontext1"
+                style="@style/my_text_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_5"
+                android:layout_marginBottom="@dimen/margin_5"
+                android:layout_below="@+id/my_versiontext"
+                android:textColor="@color/gray_text"
+                android:gravity="center"
+                android:text="© CopyRightXXX.com" />
         </RelativeLayout>
     </ScrollView>
 

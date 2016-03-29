@@ -23,7 +23,8 @@
         <activity android:name="com.redrocks.service.ningxia.activity.MainTaskActivity2" />
         <activity android:name="com.redrocks.service.ningxia.activity.MineActivity" />
         <activity android:name="com.redrocks.service.ningxia.activity.RatingActivity" />
-        <activity android:name="com.redrocks.service.ningxia.activity.HandwritingActivity" />
+        <activity android:name="com.redrocks.service.ningxia.activity.HandwritingActivity"
+            android:windowSoftInputMode="stateHidden|stateUnchanged|adjustPan" />
         <activity android:name="com.redrocks.service.ningxia.activity.EvaluationActivity" />
         <activity android:name="com.redrocks.service.ningxia.activity.TaskDetailActivity" />
         <activity

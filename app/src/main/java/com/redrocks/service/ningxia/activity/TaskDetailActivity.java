@@ -116,12 +116,17 @@ public class TaskDetailActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.layout_taskdetails);
         ButterKnife.bind(this);
+        initViews();
+    }
+    protected void initViews(){
+        titleText.setText("任务详情");
     }
 
     @OnClick({R.id.title_back, R.id.title_text, R.id.title_right, R.id.title_right_img, R.id.detail_id_view, R.id.icon1, R.id.detail_tv_about, R.id.detail_tv_name, R.id.detail_tv_address, R.id.detail_tv_person, R.id.detail_tv_phone, R.id.detail_tv_sbgz, R.id.detail_tv_dy, R.id.detail_tv_dygz, R.id.detail_tv_dy1, R.id.detail_tv_dygz1, R.id.detail_gz1, R.id.detail_tv_xsq, R.id.detail_tv_xsqgz, R.id.detail_gz3, R.id.detail_tv_xsq1, R.id.detail_tv_xsqgz1, R.id.detail_gz4, R.id.my_tv_other, R.id.my_tv_othertext, R.id.my_team_otherlay, R.id.my_tv_note, R.id.my_tv_notetext, R.id.my_invite_notelay, R.id.detail_tv_ti, R.id.detail_tv_text, R.id.tv_rebutton, R.id.tv_okbutton, R.id.tv_arrbutton})
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.title_back:
+                finish();
                 break;
             case R.id.title_text:
                 break;
@@ -184,10 +189,13 @@ public class TaskDetailActivity extends Activity {
             case R.id.detail_tv_text:
                 break;
             case R.id.tv_rebutton:
+                finish();
                 break;
             case R.id.tv_okbutton:
+                finish();
                 break;
             case R.id.tv_arrbutton:
+                finish();
                 break;
         }
     }
