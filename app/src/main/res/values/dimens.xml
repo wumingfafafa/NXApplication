@@ -24,7 +24,9 @@
     <dimen name="margin_100">100dp</dimen>
     <dimen name="margin_120">120dp</dimen>
     <dimen name="margin_200">200dp</dimen>
-    
+    <dimen name="margin_230">230dp</dimen>
+    <dimen name="margin_250">250dp</dimen>
+
     
     
     <dimen name="font_size_24px">12sp</dimen>
