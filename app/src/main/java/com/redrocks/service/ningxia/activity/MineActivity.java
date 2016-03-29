@@ -17,6 +17,7 @@ import butterknife.OnClick;
 
 public class MineActivity extends Activity {
 
+
     @Bind(R.id.title_back)
     ImageView titleBack;
     @Bind(R.id.title_text)
@@ -29,8 +30,8 @@ public class MineActivity extends Activity {
     RoundImageView idQiqiu;
     @Bind(R.id.my_name)
     TextView myName;
-    @Bind(R.id.my_title)
-    TextView myTitle;
+    @Bind(R.id.my_usertitle)
+    TextView myUserTitle;
     @Bind(R.id.my_newtasknum)
     TextView myNewtasknum;
     @Bind(R.id.lay_1)

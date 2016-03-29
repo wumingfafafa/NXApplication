@@ -250,8 +250,10 @@ public class ReportActivity extends Activity {
                 startActivity(intent2);
                 break;
             case R.id.tv_uploadbutton:
+                finish();
                 break;
             case R.id.tv_savebutton:
+                finish();
                 break;
         }
     }
