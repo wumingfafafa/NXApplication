@@ -85,23 +85,12 @@
                     android:paddingLeft="@dimen/margin_20"
                     android:paddingRight="@dimen/margin_20" >
 
-                    <ImageView
-                        android:id="@+id/icon2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentLeft="true"
-                        android:layout_centerVertical="true"
-                        android:layout_marginRight="@dimen/margin_15"
-                        android:src="@mipmap/updata"
-                        android:visibility="gone" />
-
                     <TextView
                         android:id="@+id/detail_tv_na"
                         style="@style/my_text_style"
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:layout_centerInParent="true"
-                        android:layout_toRightOf="@id/icon2"
+                        android:layout_alignParentLeft="true"
                         android:text="名称"
                         android:textColor="@color/gray_text" />
 
@@ -110,16 +99,11 @@
                         style="@style/my_text_style"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="@dimen/margin_70"
+                        android:gravity="center_vertical"
+                        android:layout_toRightOf="@id/detail_tv_na"
                         android:text="机顶盒故障维修" />
 
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentRight="true"
-                        android:layout_centerVertical="true"
-                        android:src="@mipmap/refresh"
-                        android:visibility="gone" />
                 </RelativeLayout>
 
                 <View
@@ -137,23 +121,13 @@
                     android:paddingLeft="@dimen/margin_20"
                     android:paddingRight="@dimen/margin_20" >
 
-                    <ImageView
-                        android:id="@+id/icon3"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentLeft="true"
-                        android:layout_centerVertical="true"
-                        android:layout_marginRight="@dimen/margin_15"
-                        android:src="@mipmap/updata"
-                        android:visibility="gone" />
 
                     <TextView
                         android:id="@+id/detail_tv_add"
                         style="@style/my_text_style"
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:layout_centerInParent="true"
-                        android:layout_toRightOf="@id/icon3"
+                        android:layout_alignParentLeft="true"
                         android:gravity="center_vertical"
                         android:text="地点"
                         android:textColor="@color/gray_text" />
@@ -163,7 +137,9 @@
                         style="@style/my_text_style"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:layout_centerInParent="true"
+                        android:layout_toRightOf="@id/detail_tv_add"
+                        android:layout_marginLeft="@dimen/margin_70"
+                        android:gravity="center_vertical"
                         android:text="民主路131弄1889号" />
 
                     <ImageView
@@ -182,23 +158,13 @@
                     android:paddingLeft="@dimen/margin_20"
                     android:paddingRight="@dimen/margin_20" >
 
-                    <ImageView
-                        android:id="@+id/icon20"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentLeft="true"
-                        android:layout_centerVertical="true"
-                        android:layout_marginRight="@dimen/margin_15"
-                        android:src="@mipmap/updata"
-                        android:visibility="gone" />
 
                     <TextView
                         android:id="@+id/detail_tv_pers"
                         style="@style/my_text_style"
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:layout_centerInParent="true"
-                        android:layout_toRightOf="@id/icon20"
+                        android:layout_alignParentLeft="true"
                         android:text="联系人"
                         android:textColor="@color/gray_text" />
 
@@ -207,7 +173,9 @@
                         style="@style/my_text_style"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:layout_centerInParent="true"
+                        android:layout_toRightOf="@id/detail_tv_pers"
+                        android:layout_marginLeft="@dimen/margin_60"
+                        android:gravity="center_vertical"
                         android:text="小李" />
 
                     <ImageView
@@ -234,23 +202,13 @@
                     android:paddingLeft="@dimen/margin_20"
                     android:paddingRight="@dimen/margin_20" >
 
-                    <ImageView
-                        android:id="@+id/icon30"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentLeft="true"
-                        android:layout_centerVertical="true"
-                        android:layout_marginRight="@dimen/margin_15"
-                        android:src="@mipmap/updata"
-                        android:visibility="gone" />
 
                     <TextView
                         android:id="@+id/detail_tv_ph"
                         style="@style/my_text_style"
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:layout_centerInParent="true"
-                        android:layout_toRightOf="@id/icon30"
+                        android:layout_alignParentLeft="true"
                         android:gravity="center_vertical"
                         android:text="电话"
                         android:textColor="@color/gray_text" />
@@ -260,7 +218,9 @@
                         style="@style/my_text_style"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:layout_centerInParent="true"
+                        android:layout_toRightOf="@id/detail_tv_ph"
+                        android:layout_marginLeft="@dimen/margin_70"
+                        android:gravity="center_vertical"
                         android:text="13506686118" />
 
                     <ImageView
@@ -302,11 +262,10 @@
                     <TextView
                         android:id="@+id/detail_tv_dy"
                         style="@style/my_text_style"
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:layout_centerInParent="true"
-                        android:layout_toRightOf="@id/icon4"
-                        android:text="电源故障" />
+                        android:layout_alignParentLeft="true"
+                        android:text="电源故障  " />
 
                     <TextView
                         android:id="@+id/detail_tv_dygz"
@@ -314,6 +273,9 @@
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_centerInParent="true"
+                        android:layout_marginLeft="@dimen/margin_30"
+                        android:gravity="center_vertical"
+                        android:layout_toRightOf="@id/detail_tv_dy"
                         android:text="设备无法供电" />
 
                     <ImageView
@@ -334,23 +296,12 @@
                     android:paddingLeft="@dimen/margin_20"
                     android:paddingRight="@dimen/margin_20" >
 
-                    <ImageView
-                        android:id="@+id/icon5"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentLeft="true"
-                        android:layout_centerVertical="true"
-                        android:layout_marginRight="@dimen/margin_15"
-                        android:src="@mipmap/relogin"
-                        android:visibility="gone" />
-
                     <TextView
                         android:id="@+id/detail_tv_dy1"
                         style="@style/my_text_style"
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:layout_centerInParent="true"
-                        android:layout_toRightOf="@id/icon5"
+                        android:layout_alignParentLeft="true"
                         android:text="" />
 
                     <TextView
@@ -358,7 +309,9 @@
                         style="@style/my_text_style"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:layout_centerInParent="true"
+                        android:layout_toRightOf="@id/detail_tv_dy1"
+                        android:layout_marginLeft="@dimen/margin_95"
+                        android:gravity="center_vertical"
                         android:text="电源指示灯不亮" />
 
                     <ImageView
@@ -381,10 +334,9 @@
                     <TextView
                         android:id="@+id/detail_tv_xsq"
                         style="@style/my_text_style"
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:layout_centerInParent="true"
-                        android:layout_toRightOf="@id/icon4"
+                        android:layout_alignParentLeft="true"
                         android:text="显示器故障" />
 
                     <TextView
@@ -392,7 +344,9 @@
                         style="@style/my_text_style"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="@dimen/margin_25"
+                        android:gravity="center_vertical"
+                        android:layout_toRightOf="@id/detail_tv_xsq"
                         android:text="显示器损坏" />
 
                     <ImageView
@@ -413,23 +367,13 @@
                     android:paddingLeft="@dimen/margin_20"
                     android:paddingRight="@dimen/margin_20" >
 
-                    <ImageView
-                        android:id="@+id/icon50"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentLeft="true"
-                        android:layout_centerVertical="true"
-                        android:layout_marginRight="@dimen/margin_15"
-                        android:src="@mipmap/relogin"
-                        android:visibility="gone" />
 
                     <TextView
                         android:id="@+id/detail_tv_xsq1"
                         style="@style/my_text_style"
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:layout_centerInParent="true"
-                        android:layout_toRightOf="@id/icon50"
+                        android:layout_alignParentLeft="true"
                         android:text="" />
 
                     <TextView
@@ -437,16 +381,11 @@
                         style="@style/my_text_style"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:layout_centerInParent="true"
-                        android:text="重新登录" />
+                        android:layout_marginLeft="@dimen/margin_95"
+                        android:layout_toRightOf="@id/detail_tv_xsq1"
+                        android:gravity="center_vertical"
+                        android:text="" />
 
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentRight="true"
-                        android:layout_centerVertical="true"
-                        android:src="@mipmap/common_arrow"
-                        android:visibility="gone" />
                 </RelativeLayout>
 
                 <RelativeLayout
@@ -460,9 +399,9 @@
                     <TextView
                         android:id="@+id/my_tv_other"
                         style="@style/my_text_style"
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:layout_centerInParent="true"
+                        android:layout_alignParentLeft="true"
                         android:text="其他故障"
                         android:textColor="@color/gray_text" />
 
@@ -471,7 +410,9 @@
                         style="@style/my_text_style"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:layout_centerInParent="true"
+                        android:layout_toRightOf="@id/my_tv_other"
+                        android:layout_marginLeft="@dimen/margin_40"
+                        android:gravity="center_vertical"
                         android:text="无"
                         android:textColor="@color/gray_text" />
                 </RelativeLayout>
@@ -494,9 +435,9 @@
                     <TextView
                         android:id="@+id/my_tv_note"
                         style="@style/my_text_style"
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:layout_centerInParent="true"
+                        android:layout_alignParentLeft="true"
                         android:gravity="center_vertical"
                         android:text="备注"
                         android:textColor="@color/gray_text" />
@@ -506,7 +447,8 @@
                         style="@style/my_text_style"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="@dimen/margin_70"
+                        android:layout_toRightOf="@id/my_tv_note"
                         android:gravity="center_vertical"
                         android:text="无"
                         android:textColor="@color/gray_text" />
@@ -521,34 +463,22 @@
                     android:paddingLeft="@dimen/margin_20"
                     android:paddingRight="@dimen/margin_20" >
 
-                    <ImageView
-                        android:id="@+id/icon6"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentLeft="true"
-                        android:layout_centerVertical="true"
-                        android:layout_marginRight="@dimen/margin_15"
-                        android:src="@mipmap/updateicon"
-                        android:visibility="gone" />
-
                     <TextView
                         android:id="@+id/detail_tv_ti"
                         style="@style/my_text_style"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_alignParentLeft="true"
-                        android:layout_marginRight="@dimen/margin_30"
-                        android:layout_toRightOf="@id/icon6"
-                        android:gravity="center_vertical"
                         android:text="报修时间"
                         android:textColor="@color/gray_text" />
 
                     <TextView
                         android:id="@+id/detail_tv_text"
                         style="@style/my_text_style"
-                        android:layout_width="@dimen/margin_80"
+                        android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_toRightOf="@id/detail_tv_ti"
+                        android:layout_marginLeft="@dimen/margin_40"
                         android:text="1小时前"
                         android:textColor="@color/gray_text"
                         android:textSize="12sp" />

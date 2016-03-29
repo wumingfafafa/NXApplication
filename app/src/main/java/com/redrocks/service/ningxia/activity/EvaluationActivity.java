@@ -2,6 +2,11 @@ package com.redrocks.service.ningxia.activity;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.TextView;
 
 import com.redrocks.service.ningxia.bean.User;
 import com.redrocks.service.ningxia.util.JSONHelper;
@@ -19,13 +24,41 @@ import butterknife.ButterKnife;
  * Created by chuny on 2016/3/24.
  */
 public class EvaluationActivity extends Activity {
+    private LinearLayout groupView;// 线性水平布局对象
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.layout_taskdetails);
+        setContentView(R.layout.layout_report);
+//        setContentView(R.layout.layout_taskdetails);
         ButterKnife.bind(this);
+        initView();
 
     }
+
+    /**
+     * 初始化视图
+     */
+    private void initView() {
+        groupView = (LinearLayout) findViewById(R.id.middle_layout);
+
+        // 新增子布局对象到父布局中
+        for (int i = 0; i < 8; i++) {
+            ImageView childImg;// 子视图ImageView
+            TextView childName;// 子视图名称
+            View childView;// 子视图View
+
+            // 初始化子布局
+            childView = LayoutInflater.from(this).inflate(
+                    R.layout.item_img, null);
+            childImg = (ImageView) childView.findViewById(R.id.child_img);
+            childName = (TextView) childView.findViewById(R.id.child_name);
+
+            childImg.setBackgroundResource(R.mipmap.ic_launcher );
+            childName.setText("测试子视图" + i);
+            groupView.addView(childView);// 将childView添加到父布局
+        }
+    }
+
     void testObj(){
         try {
             User user = new User();
