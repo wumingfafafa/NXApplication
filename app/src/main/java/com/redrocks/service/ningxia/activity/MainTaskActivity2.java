@@ -109,6 +109,8 @@ public class MainTaskActivity2 extends Activity {
             case R.id.title_back:
                 break;
             case R.id.title_text:
+                Intent intent0 = new Intent(this,DialogActivity.class);
+                startActivity(intent0);
                 break;
             case R.id.title_right_img:
                 Intent intent = new Intent(this,MineActivity.class);

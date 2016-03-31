@@ -40,6 +40,10 @@
         <activity android:name="com.redrocks.service.ningxia.activity.ImageFile"></activity>
         <activity android:name="com.redrocks.service.ningxia.activity.ShowAllPhoto"></activity>
         <activity android:name="com.redrocks.service.ningxia.activity.GalleryActivity"></activity>
+        <activity
+            android:name="com.redrocks.service.ningxia.activity.DialogActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
     </application>
 
 </manifest>
