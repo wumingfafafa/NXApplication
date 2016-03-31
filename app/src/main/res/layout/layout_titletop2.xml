@@ -9,8 +9,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
-        android:paddingLeft="@dimen/margin_15"
-        android:src="@mipmap/menu"
+        android:layout_marginLeft="@dimen/margin_15"
+        android:background="@mipmap/menu"
          />
 
     <TextView

@@ -3,156 +3,160 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/gray" >
+    android:background="@color/gray">
 
     <include
         android:id="@+id/my_title"
         layout="@layout/layout_titletop" />
 
+
+    <LinearLayout
+        android:id="@+id/my_id_ll_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/my_title"
+        android:background="@color/blue"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.redrocks.service.ningxia.view.RoundImageView
+            android:id="@+id/id_qiqiu"
+            android:layout_width="@dimen/margin_80"
+            android:layout_height="@dimen/margin_80"
+            android:src="@mipmap/relogin"></com.redrocks.service.ningxia.view.RoundImageView>
+
+        <TextView
+            android:id="@+id/my_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_10"
+            android:text="奔跑小虾米"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/my_usertitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_10"
+            android:layout_marginTop="@dimen/margin_10"
+            android:text="高级工程师"
+            android:textColor="@color/white"
+            android:textSize="12dp" />
+
+
+    </LinearLayout>
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/my_title"
-        android:fillViewport="false" >
+        android:layout_below="@id/my_id_ll_top"
+        android:fillViewport="false">
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent" >
+            android:layout_height="match_parent">
 
-            <LinearLayout
-                android:id="@+id/my_id_ll_top"
+            <RelativeLayout
+                android:id="@+id/my_content"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/blue"
-                android:gravity="center"
-                android:orientation="vertical" >
-
-                <com.redrocks.service.ningxia.view.RoundImageView
-                    android:id="@+id/id_qiqiu"
-                    android:layout_width="@dimen/margin_80"
-                    android:layout_height="@dimen/margin_80"
-                    android:src="@mipmap/relogin" >
-                </com.redrocks.service.ningxia.view.RoundImageView>
-
-                <TextView
-                    android:id="@+id/my_name"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/margin_10"
-                    android:text="奔跑小虾米"
-                    android:textColor="@color/white" />
-
-                <TextView
-                    android:id="@+id/my_usertitle"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="@dimen/margin_10"
-                    android:layout_marginTop="@dimen/margin_10"
-                    android:text="高级工程师"
-                    android:textColor="@color/white"
-                    android:textSize="12dp" />
+                android:layout_height="@dimen/margin_55"
+                android:background="@color/white_transparent">
 
                 <RelativeLayout
-                    android:id="@+id/my_content"
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/margin_55"
-                    android:background="@color/white_transparent"
-                    >
+                    android:id="@+id/lay_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/margin_50"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginBottom="@dimen/margin_5"
+                    android:layout_marginLeft="@dimen/margin_30"
+                    android:orientation="vertical">
 
-                    <RelativeLayout
-                        android:id="@+id/lay_1"
+                    <TextView
+                        android:id="@+id/my_newtasknum"
+                        style="@style/my_text_style"
                         android:layout_width="wrap_content"
-                        android:layout_height="@dimen/margin_50"
-                        android:layout_alignParentLeft="true"
-                        android:layout_marginLeft="@dimen/margin_30"
-                        android:layout_marginBottom="@dimen/margin_5"
-                        android:orientation="vertical" >
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:text="12" />
 
-                        <TextView
-                            android:id="@+id/my_newtasknum"
-                            style="@style/my_text_style"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_centerInParent="true"
-                            android:gravity="center"
-                            android:text="12" />
-
-                        <TextView
-                            style="@style/my_text_style"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_centerInParent="true"
-                            android:layout_below="@id/my_newtasknum"
-                            android:gravity="center"
-                            android:textColor="@color/gray_text"
-                            android:textSize="12dp"
-                            android:text="新的任务" />
-                    </RelativeLayout>
-                    <RelativeLayout
-                        android:id="@+id/lay_2"
-                        android:layout_centerHorizontal="true"
+                    <TextView
+                        style="@style/my_text_style"
                         android:layout_width="wrap_content"
-                        android:layout_height="@dimen/margin_50"
-                        android:layout_marginBottom="@dimen/margin_5"
-                        android:orientation="vertical" >
-
-                        <TextView
-                            android:id="@+id/my_nouploadtask"
-                            style="@style/my_text_style"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_centerInParent="true"
-                            android:gravity="center"
-                            android:text="3" />
-
-                        <TextView
-                            style="@style/my_text_style"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_below="@id/my_nouploadtask"
-                            android:layout_centerInParent="true"
-                            android:gravity="center"
-                            android:textColor="@color/gray_text"
-                            android:textSize="12dp"
-                            android:text="未上传报告" />
-                    </RelativeLayout>
-                    <RelativeLayout
-                        android:id="@+id/lay_3"
-                        android:layout_width="wrap_content"
-                        android:layout_alignParentRight="true"
-                        android:layout_height="@dimen/margin_50"
-                        android:layout_marginRight="@dimen/margin_30"
-                        android:layout_marginBottom="@dimen/margin_5"
-                        android:orientation="vertical" >
-
-                        <TextView
-                            android:id="@+id/my_dotask"
-                            style="@style/my_text_style"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_centerInParent="true"
-                            android:gravity="center"
-                            android:text="1" />
-
-                        <TextView
-                            style="@style/my_text_style"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_below="@id/my_dotask"
-                            android:layout_centerInParent="true"
-                            android:gravity="center"
-                            android:textColor="@color/gray_text"
-                            android:textSize="12dp"
-                            android:text="已完成任务" />
-                    </RelativeLayout>
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/my_newtasknum"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:text="新的任务"
+                        android:textColor="@color/gray_text"
+                        android:textSize="12dp" />
                 </RelativeLayout>
-            </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/lay_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/margin_50"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="@dimen/margin_5"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/my_nouploadtask"
+                        style="@style/my_text_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:text="3" />
+
+                    <TextView
+                        style="@style/my_text_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/my_nouploadtask"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:text="未上传报告"
+                        android:textColor="@color/gray_text"
+                        android:textSize="12dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/lay_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/margin_50"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="@dimen/margin_5"
+                    android:layout_marginRight="@dimen/margin_30"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/my_dotask"
+                        style="@style/my_text_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:text="1" />
+
+                    <TextView
+                        style="@style/my_text_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/my_dotask"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:text="已完成任务"
+                        android:textColor="@color/gray_text"
+                        android:textSize="12dp" />
+                </RelativeLayout>
+            </RelativeLayout>
 
             <View
                 android:id="@+id/my_id_view"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/height_divider_line_lsize"
-                android:layout_below="@+id/my_id_ll_top"
+                android:layout_below="@+id/my_content"
                 android:background="@color/gray_text"
                 android:visibility="gone" />
 
@@ -161,7 +165,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/my_id_view"
-                android:orientation="vertical" >
+                android:orientation="vertical">
 
                 <RelativeLayout
                     android:id="@+id/my_jingdu"
@@ -171,7 +175,7 @@
                     android:layout_marginTop="@dimen/margin_10"
                     android:background="@color/white_transparent"
                     android:paddingLeft="@dimen/margin_20"
-                    android:paddingRight="@dimen/margin_20" >
+                    android:paddingRight="@dimen/margin_20">
 
                     <ImageView
                         android:id="@+id/icon1"
@@ -214,7 +218,7 @@
                     android:layout_height="@dimen/margin_50"
                     android:background="@color/white_transparent"
                     android:paddingLeft="@dimen/margin_20"
-                    android:paddingRight="@dimen/margin_20" >
+                    android:paddingRight="@dimen/margin_20">
 
                     <ImageView
                         android:id="@+id/icon2"
@@ -255,7 +259,7 @@
                     android:layout_marginBottom="@dimen/margin_10"
                     android:background="@color/white_transparent"
                     android:paddingLeft="@dimen/margin_20"
-                    android:paddingRight="@dimen/margin_20" >
+                    android:paddingRight="@dimen/margin_20">
 
                     <ImageView
                         android:id="@+id/icon3"
@@ -310,7 +314,7 @@
                     android:layout_height="@dimen/margin_50"
                     android:background="@color/white_transparent"
                     android:paddingLeft="@dimen/margin_20"
-                    android:paddingRight="@dimen/margin_20" >
+                    android:paddingRight="@dimen/margin_20">
 
                     <ImageView
                         android:id="@+id/icon4"
@@ -351,7 +355,7 @@
                     android:layout_marginBottom="@dimen/margin_10"
                     android:background="@color/white_transparent"
                     android:paddingLeft="@dimen/margin_20"
-                    android:paddingRight="@dimen/margin_20" >
+                    android:paddingRight="@dimen/margin_20">
 
                     <ImageView
                         android:id="@+id/icon5"
@@ -394,7 +398,7 @@
                     android:layout_marginBottom="@dimen/margin_10"
                     android:background="@color/white_transparent"
                     android:paddingLeft="@dimen/margin_20"
-                    android:paddingRight="@dimen/margin_20" >
+                    android:paddingRight="@dimen/margin_20">
 
                     <ImageView
                         android:id="@+id/icon6"
@@ -443,20 +447,21 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/my_id_ll_info"
-                android:textColor="@color/gray_text"
                 android:gravity="center"
-                android:text="当前版本V 1.0" />
+                android:text="当前版本V 1.0"
+                android:textColor="@color/gray_text" />
+
             <TextView
                 android:id="@+id/my_versiontext1"
                 style="@style/my_text_style"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/margin_5"
-                android:layout_marginBottom="@dimen/margin_5"
                 android:layout_below="@+id/my_versiontext"
-                android:textColor="@color/gray_text"
+                android:layout_marginBottom="@dimen/margin_5"
+                android:layout_marginTop="@dimen/margin_5"
                 android:gravity="center"
-                android:text="© CopyRightXXX.com" />
+                android:text="© CopyRightXXX.com"
+                android:textColor="@color/gray_text" />
         </RelativeLayout>
     </ScrollView>
 

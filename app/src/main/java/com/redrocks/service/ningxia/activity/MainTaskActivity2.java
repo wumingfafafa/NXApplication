@@ -107,6 +107,8 @@ public class MainTaskActivity2 extends Activity {
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.title_back:
+                Intent intent1 = new Intent(this,HistoryTaskActivity.class);
+                startActivity(intent1);
                 break;
             case R.id.title_text:
                 Intent intent0 = new Intent(this,DialogActivity.class);

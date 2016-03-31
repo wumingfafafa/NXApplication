@@ -42,8 +42,10 @@
         <activity android:name="com.redrocks.service.ningxia.activity.GalleryActivity"></activity>
         <activity
             android:name="com.redrocks.service.ningxia.activity.DialogActivity"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
-        </activity>
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"></activity>
+        <activity
+            android:name="com.redrocks.service.ningxia.activity.HistoryTaskActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"></activity>
     </application>
 
 </manifest>
