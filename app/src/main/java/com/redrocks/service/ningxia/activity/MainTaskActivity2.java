@@ -42,7 +42,10 @@ public class MainTaskActivity2 extends Activity {
     Spinner spinnerAdapter;
     @Bind(R.id.tv_bgbutton)
     Button tvBgbutton;
+//    @Bind(R.id.menusanj)
+    static ImageView menusanj;
 
+    public static int menucount = 0;
     private List<Map<String, Object>> mData;
 
     @Override
@@ -51,6 +54,8 @@ public class MainTaskActivity2 extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.layout_maintask);
         ButterKnife.bind(this);
+        menusanj = (ImageView)findViewById(R.id.menusanj);
+        menusanj.setVisibility(View.VISIBLE);
         mData = getData();
         TaskAdapter adapter = new TaskAdapter(this, getData());
         main_listview.setAdapter(adapter);
@@ -103,25 +108,47 @@ public class MainTaskActivity2 extends Activity {
         return list;
     }
 
-    @OnClick({R.id.title_back, R.id.title_text, R.id.tv_bgbutton,R.id.title_right_img})
+    @OnClick({R.id.title_back, R.id.title_text, R.id.tv_bgbutton, R.id.title_right_img,R.id.menusanj})
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.title_back:
-                Intent intent1 = new Intent(this,HistoryTaskActivity.class);
+                Intent intent1 = new Intent(this, HistoryTaskActivity.class);
                 startActivity(intent1);
                 break;
             case R.id.title_text:
-                Intent intent0 = new Intent(this,DialogActivity.class);
+                Intent intent0 = new Intent(this, DialogActivity.class);
                 startActivity(intent0);
+                menucount = 1;
+                refreshMenuicon();
+                break;
+            case R.id.menusanj:
+                Intent intent01 = new Intent(this, DialogActivity.class);
+                startActivity(intent01);
+                menucount = 1;
+                refreshMenuicon();
                 break;
             case R.id.title_right_img:
-                Intent intent = new Intent(this,MineActivity.class);
+                Intent intent = new Intent(this, MineActivity.class);
                 startActivity(intent);
                 break;
             case R.id.tv_bgbutton:
-                Intent intent2 = new Intent(this,ReportActivity.class);
+                Intent intent2 = new Intent(this, ReportActivity.class);
                 startActivity(intent2);
                 break;
         }
     }
+    static void refreshMenuicon(){
+        if(menucount==1){
+            menusanj.setImageResource(R.mipmap.menudown);
+            menucount = 0;
+        }else{
+            menusanj.setImageResource(R.mipmap.menuup);
+            menucount = 1;
+        }
+    }
+    public static void setMenuCount(int count){
+        menucount = count;
+        refreshMenuicon();
+    }
+
 }

@@ -57,7 +57,8 @@ public class HistoryTaskActivity extends Activity {
 		titleText.setText("历史任务");
 		title_right_img.setVisibility(View.GONE);
 		tvBgbutton.setVisibility(View.GONE);
-		titleBack.setBackgroundResource(R.mipmap.back_arrow);
+//		titleBack.setBackgroundResource(R.mipmap.back_arrow);
+		titleBack.setImageResource(R.mipmap.back_arrow);
 		mData = getData();
 		TaskAdapter adapter = new TaskAdapter(this, getData());
 		main_listview.setAdapter(adapter);
