@@ -41,7 +41,8 @@ public class LoginActivity extends Activity {
 		setContentView(R.layout.layout_login);
 		ButterKnife.bind(this);
 	}
-	private static String PATH = "http://192.168.0.103:8080/JsonProject/servlet/JsonServlet";
+	private static String PATH = "http://10.118.1.23:8080/JsonProject/servlet/JsonServlet";
+//	private static String PATH = "http://192.168.0.103:8080/JsonProject/servlet/JsonServlet";
 	private static final String TAG = "MainActivity";
 	@OnClick({ R.id.icon_user, R.id.login_user, R.id.icon_pass, R.id.login_pass, R.id.login_button })
 	public void onClick(View view) {
@@ -93,17 +94,17 @@ public class LoginActivity extends Activity {
 //					JSONUtils.fromJson(content, new TypeToken<ListVO<Config>>() {});
 //解析json对象
 //					JSONUtils.fromJson(content, new TypeToken<Result>() {});
-					Person p = new Person();
-					p.setAddress("111");
-					p.setId(22);
-					p.setName("333");
-					String json =  new Gson().toJson(p);
+//					Person p = new Person();
+//					p.setAddress("111");
+//					p.setId(22);
+//					p.setName("333");
+//					String json =  new Gson().toJson(p);
 //					Toast.makeText(LoginActivity.this,"json="+json,
 //							Toast.LENGTH_LONG).show();
 //					Person person = new Gson().fromJson(json, Person.class);
 //					Person person = new Gson().fromJson((String) msg.obj, Person.class);
-//					Person person = JSONUtils.fromJson((String) msg.obj, new TypeToken<Person>() {});
-					Person person = JSONUtils.fromJson(json, new TypeToken<Person>() {});
+					Person person = JSONUtils.fromJson((String) msg.obj, new TypeToken<Person>() {});
+//					Person person = JSONUtils.fromJson(json, new TypeToken<Person>() {});
 //					Toast.makeText(LoginActivity.this,"(String) msg.obj="+(String) msg.obj+";" + person.toString(),
 //							Toast.LENGTH_LONG).show();
 					Toast.makeText(LoginActivity.this,"(String) msg.obj="+(String) msg.obj+";" + person.toString(),

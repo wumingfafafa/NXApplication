@@ -25,6 +25,10 @@ dependencies {
     compile 'com.android.support:appcompat-v7:23.2.1'
     compile 'com.jakewharton:butterknife:7.0.1'
     compile  'com.google.code.gson:gson:2.6.2'
+    //stetho
+    compile 'com.facebook.stetho:stetho:1.3.1'
+    compile 'com.facebook.stetho:stetho-okhttp3:1.3.1'
+
     //parse json
     compile 'com.google.code.gson:gson:2.4'
     compile project(':proimg')

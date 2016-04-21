@@ -16,6 +16,7 @@
             android:textSize="14sp"
             android:textColor="#fff"
             android:id="@+id/gallery_back"
+            android:visibility="gone"
             android:text="@string/album"
             android:background="@drawable/plugin_camera_title_btn_back"
             android:layout_marginTop="5dp"
