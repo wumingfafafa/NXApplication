@@ -17,7 +17,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
@@ -28,19 +28,19 @@ import butterknife.OnClick;
  */
 public class MainTaskActivity2 extends Activity {
 
-    @Bind(R.id.title_right_img)
+    @BindView(R.id.title_right_img)
     ImageView title_right_img;
-    @Bind(R.id.main_listview)
+    @BindView(R.id.main_listview)
     ListView main_listview;
-    @Bind(R.id.title_back)
+    @BindView(R.id.title_back)
     ImageView titleBack;
-    @Bind(R.id.title_text)
+    @BindView(R.id.title_text)
     TextView titleText;
-    @Bind(R.id.title_right)
+    @BindView(R.id.title_right)
     TextView titleRight;
-    @Bind(R.id.spinnerAdapter)
+    @BindView(R.id.spinnerAdapter)
     Spinner spinnerAdapter;
-    @Bind(R.id.tv_bgbutton)
+    @BindView(R.id.tv_bgbutton)
     Button tvBgbutton;
 
     private List<Map<String, Object>> mData;

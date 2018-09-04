@@ -8,21 +8,20 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
-import com.redrocks.service.ningxia.activity.R;
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 public class LoginActivity extends Activity {
 
-	@Bind(R.id.icon_user)
+	@BindView(R.id.icon_user)
 	ImageView iconUser;
-	@Bind(R.id.login_user)
+	@BindView(R.id.login_user)
 	EditText loginUser;
-	@Bind(R.id.icon_pass)
+	@BindView(R.id.icon_pass)
 	ImageView iconPass;
-	@Bind(R.id.login_pass)
+	@BindView(R.id.login_pass)
 	EditText loginPass;
-	@Bind(R.id.login_button)
+	@BindView(R.id.login_button)
 	Button loginButton;
 
 	@Override

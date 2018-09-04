@@ -237,7 +237,8 @@ public class TagCloudView extends ViewGroup {
                 totalWidth += childWidth + mTagBorderHor;
             }
 
-            if (child.getTag() != null && child.getTag() == TYPE_TEXT_NORMAL) {
+//            if (child.getTag() != null && child.getTag() == TYPE_TEXT_NORMAL) {
+            if (child.getTag() != null && (TYPE_TEXT_NORMAL+"").equals(child.getTag().toString())) {
                 if (totalWidth + mTagBorderHor + mViewBorder + mViewBorder + endTextWidth + imageWidth < sizeWidth) {
                     child.layout(
                             totalWidth - childWidth + mTagBorderVer,

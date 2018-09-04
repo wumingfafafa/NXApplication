@@ -22,40 +22,40 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
 public class HandwritingActivity extends Activity {
-    @Bind(R.id.title_back)
+    @BindView(R.id.title_back)
     ImageView titleBack;
-    @Bind(R.id.title_text)
+    @BindView(R.id.title_text)
     TextView titleText;
-    @Bind(R.id.title_right)
+    @BindView(R.id.title_right)
     TextView titleRight;
-    @Bind(R.id.title_right_img)
+    @BindView(R.id.title_right_img)
     ImageView titleRightImg;
-    @Bind(R.id.score_lay1)
+    @BindView(R.id.score_lay1)
     LinearLayout scoreLay1;
-    @Bind(R.id.tv_ts)
+    @BindView(R.id.tv_ts)
     TextView tvTs;
-    @Bind(R.id.zyxratingBar)
+    @BindView(R.id.zyxratingBar)
     RatingBar zyxratingBar;
-    @Bind(R.id.relay1)
+    @BindView(R.id.relay1)
     RelativeLayout relay1;
-    @Bind(R.id.fwtdratingBar)
+    @BindView(R.id.fwtdratingBar)
     RatingBar fwtdratingBar;
-    @Bind(R.id.relay2)
+    @BindView(R.id.relay2)
     RelativeLayout relay2;
-    @Bind(R.id.rwwcdratingBar)
+    @BindView(R.id.rwwcdratingBar)
     RatingBar rwwcdratingBar;
-    @Bind(R.id.relay3)
+    @BindView(R.id.relay3)
     RelativeLayout relay3;
-    @Bind(R.id.strut)
+    @BindView(R.id.strut)
     View strut;
-    @Bind(R.id.tv_rebutton)
+    @BindView(R.id.tv_rebutton)
     Button tvRebutton;
-    @Bind(R.id.tv_okbutton)
+    @BindView(R.id.tv_okbutton)
     Button tvOkbutton;
     /**
      * Called when the activity is first created.
